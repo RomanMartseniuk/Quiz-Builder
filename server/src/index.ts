@@ -1,7 +1,7 @@
 import express from "express";
 import "dotenv/config";
 
-import quizRouter from "./routes/quiz";
+import quizRouter from "./routes/quiz.js";
 
 const app = express();
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;

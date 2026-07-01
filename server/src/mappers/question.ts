@@ -1,5 +1,5 @@
-import type { Question as PrismaQuestion } from "../generated/prisma/client";
-import type { Question } from "../types/Question";
+import type { Question as PrismaQuestion } from "../generated/prisma/client.js";
+import type { Question } from "../types/Question.js";
 
 export function toPrismaQuestion(q: Question, order: number) {
    const base = { question: q.question, type: q.type, order };

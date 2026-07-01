@@ -1,8 +1,9 @@
 // src/routes/quiz.ts
 import { Router } from "express";
-import { prisma } from "../prisma";
-import { validateCreateQuiz } from "../validators/quiz";
-import { toPrismaQuestion, fromPrismaQuestion } from "../mappers/question";
+import { prisma } from "../prisma.js";
+import { validateCreateQuiz } from "../validators/quiz.js";
+import { toPrismaQuestion, fromPrismaQuestion } from "../mappers/question.js";
+import { Prisma } from "../generated/prisma/client.js";
 
 const router = Router();
 
@@ -49,7 +50,7 @@ router.get("/quizzes", async (req, res) => {
       });
 
       res.json(
-         quizzes.map((quiz) => ({
+         quizzes.map((quiz: { id: any; title: any; questions: Prisma.QuestionModel[]; }) => ({
             id: quiz.id,
             title: quiz.title,
             questions: quiz.questions.map(fromPrismaQuestion),

@@ -1,6 +1,6 @@
 // src/test-db.ts
 import "dotenv/config";
-import { prisma } from "./prisma";
+import { prisma } from "./prisma.js";
 
 async function main() {
    const quiz = await prisma.quiz.create({

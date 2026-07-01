@@ -1,4 +1,4 @@
-import type { Question } from "../types/Question";
+import type { Question } from "../types/Question.js";
 
 function isValidQuestion(q: unknown): q is Question {
    if (typeof q !== "object" || q === null) return false;
