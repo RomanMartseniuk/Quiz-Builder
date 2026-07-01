@@ -3,6 +3,8 @@
 A full-stack quiz application where users can create, manage quizzes.  
 Built with modern TypeScript stack and clean architecture.
 
+
+- [Demo Link](https://quiz-builder-liart.vercel.app)
 ---
 
 ## 🚀 Features
@@ -13,6 +15,10 @@ Built with modern TypeScript stack and clean architecture.
 - View quiz details
 - Persistent storage with SQLite
 - REST API backend
+
+
+- Backend is hosted on [Render](https://render.com)
+- Frontend is hosted on [Vercel](https://vercel.com)
 
 ---
 
