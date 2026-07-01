@@ -1,4 +1,3 @@
-// src/routes/quiz.ts
 import { Router } from "express";
 import { prisma } from "../prisma.js";
 import { validateCreateQuiz } from "../validators/quiz.js";
