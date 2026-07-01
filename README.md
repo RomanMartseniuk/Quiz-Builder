@@ -1,6 +1,6 @@
 # 🧠 Quiz Builder
 
-A full-stack quiz application where users can create, manage, and take quizzes.  
+A full-stack quiz application where users can create, manage quizzes.  
 Built with modern TypeScript stack and clean architecture.
 
 ---
